@@ -1,2 +1,1 @@
-# dungeoneer
-Coursework for year 2.
+Simple mobile game made in Unity that is a level based 2D platformer
