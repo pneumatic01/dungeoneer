@@ -1,0 +1,361 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1916070252553896892
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7049038504049771506}
+  - component: {fileID: 3078676251597567925}
+  - component: {fileID: 4212346222164519357}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7049038504049771506
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916070252553896892}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3078676251597567925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916070252553896892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a129fd98349ed5b4faebb912cb4f6053, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: footstep1
+    clip: {fileID: 8300000, guid: 62e2ca1904ea4124cbd7db1d84f0eeaa, type: 3}
+    volume: 0.1
+    pitch: 0.5
+    spatialBlend: 1
+    looping: 0
+    source: {fileID: 0}
+  - name: footstep2
+    clip: {fileID: 8300000, guid: a8c14ba32a278d04083513fdced2d70f, type: 3}
+    volume: 0.1
+    pitch: 0.5
+    spatialBlend: 1
+    looping: 0
+    source: {fileID: 0}
+  - name: footstep3
+    clip: {fileID: 8300000, guid: 41c5f545565fa3e4ab6d2ec78c218266, type: 3}
+    volume: 0.1
+    pitch: 0.5
+    spatialBlend: 1
+    looping: 0
+    source: {fileID: 0}
+  - name: footstep4
+    clip: {fileID: 8300000, guid: 920e68eff641ecc4cb40cf5e174c5d3d, type: 3}
+    volume: 0.1
+    pitch: 0.5
+    spatialBlend: 1
+    looping: 0
+    source: {fileID: 0}
+  - name: footstep5
+    clip: {fileID: 8300000, guid: 01fb57ebb962d6640abbd58b4942c555, type: 3}
+    volume: 0.1
+    pitch: 0.5
+    spatialBlend: 1
+    looping: 0
+    source: {fileID: 0}
+  - name: footstep6
+    clip: {fileID: 8300000, guid: e3156b4e38080224284265868ea97eca, type: 3}
+    volume: 0.1
+    pitch: 0.5
+    spatialBlend: 1
+    looping: 0
+    source: {fileID: 0}
+  - name: footstep7
+    clip: {fileID: 8300000, guid: a78d4b9c56d19e3458131570afbc79dc, type: 3}
+    volume: 0.1
+    pitch: 0.5
+    spatialBlend: 1
+    looping: 0
+    source: {fileID: 0}
+  - name: footstep8
+    clip: {fileID: 8300000, guid: 990e293d33810bf458e43ebc2781cca3, type: 3}
+    volume: 0.1
+    pitch: 0.5
+    spatialBlend: 1
+    looping: 0
+    source: {fileID: 0}
+  - name: pickup
+    clip: {fileID: 8300000, guid: 540a4fe685a4870489ce6e7812a0b5b5, type: 3}
+    volume: 0.5
+    pitch: 1
+    spatialBlend: 1
+    looping: 0
+    source: {fileID: 0}
+  - name: damage
+    clip: {fileID: 8300000, guid: 09873ae27301f384bba4198add637b62, type: 3}
+    volume: 0.5
+    pitch: 1
+    spatialBlend: 1
+    looping: 0
+    source: {fileID: 0}
+  - name: darkCharge
+    clip: {fileID: 8300000, guid: 8c6223c02067aba44aa55f79058e8304, type: 3}
+    volume: 0.5
+    pitch: 1
+    spatialBlend: 1
+    looping: 0
+    source: {fileID: 0}
+  - name: darkRelease
+    clip: {fileID: 8300000, guid: fc99149e06cdc684f8c06ea57619a42f, type: 3}
+    volume: 0.25
+    pitch: 1
+    spatialBlend: 1
+    looping: 0
+    source: {fileID: 0}
+  - name: darkExplosion
+    clip: {fileID: 8300000, guid: be3e068aa02273446bf5848454bbe437, type: 3}
+    volume: 0.75
+    pitch: 1
+    spatialBlend: 1
+    looping: 0
+    source: {fileID: 0}
+  - name: fireExplosion
+    clip: {fileID: 8300000, guid: 6d7a459c2a6346f49bd64d9280e78258, type: 3}
+    volume: 0.75
+    pitch: 1
+    spatialBlend: 1
+    looping: 0
+    source: {fileID: 0}
+  - name: fireRelease
+    clip: {fileID: 8300000, guid: 199fc479215b45943b436a7fa5ef9da8, type: 3}
+    volume: 0.5
+    pitch: 1
+    spatialBlend: 1
+    looping: 0
+    source: {fileID: 0}
+  - name: plasmaRelease
+    clip: {fileID: 8300000, guid: fe05bd89df2cb50419e44ee322accd77, type: 3}
+    volume: 0.75
+    pitch: 1
+    spatialBlend: 1
+    looping: 0
+    source: {fileID: 0}
+  - name: swoosh1
+    clip: {fileID: 8300000, guid: 8fbfd821367514b43bb09677eb3c1529, type: 3}
+    volume: 0.75
+    pitch: 1
+    spatialBlend: 1
+    looping: 0
+    source: {fileID: 0}
+  - name: swoosh2
+    clip: {fileID: 8300000, guid: 8240676490211b041af2634cf45d2fbe, type: 3}
+    volume: 0.75
+    pitch: 1
+    spatialBlend: 1
+    looping: 0
+    source: {fileID: 0}
+  - name: swoosh3
+    clip: {fileID: 8300000, guid: 9c5caf773607c0640aca163a08ac3623, type: 3}
+    volume: 0.75
+    pitch: 1
+    spatialBlend: 1
+    looping: 0
+    source: {fileID: 0}
+  - name: swoosh4
+    clip: {fileID: 8300000, guid: 629ba64f21ac92d48aeb1072559a2f62, type: 3}
+    volume: 0.75
+    pitch: 1
+    spatialBlend: 1
+    looping: 0
+    source: {fileID: 0}
+  - name: paladinCharge
+    clip: {fileID: 8300000, guid: 4737b4ab474948c478b0f6f84071db70, type: 3}
+    volume: 0.75
+    pitch: 1.25
+    spatialBlend: 1
+    looping: 0
+    source: {fileID: 0}
+  - name: paladinSwing
+    clip: {fileID: 8300000, guid: f8e223104c7b20b4f938f7ff9fffb984, type: 3}
+    volume: 0.75
+    pitch: 1
+    spatialBlend: 1
+    looping: 0
+    source: {fileID: 0}
+  - name: spinAttackSound
+    clip: {fileID: 8300000, guid: 86d8ef754a7520e4f9efce08a2a1295c, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 1
+    looping: 0
+    source: {fileID: 0}
+  - name: bossClang1
+    clip: {fileID: 8300000, guid: 38916c7ae44644e439504da77b2b010f, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 1
+    looping: 0
+    source: {fileID: 0}
+  - name: bossClang2
+    clip: {fileID: 8300000, guid: 8767fa5f20feac343b9d8e8c1d4f24cc, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 1
+    looping: 0
+    source: {fileID: 0}
+  - name: bossBodySound
+    clip: {fileID: 8300000, guid: 0da532600a1e89c4b9ca5347f1fec08b, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 1
+    looping: 0
+    source: {fileID: 0}
+  - name: bossHammerThrowSound
+    clip: {fileID: 8300000, guid: 5a17148312f97284ba590e13467196c9, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 1
+    looping: 0
+    source: {fileID: 0}
+  - name: bossJumpSound
+    clip: {fileID: 8300000, guid: e457837148a75fb478b1acc5b9baa6f5, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 1
+    looping: 0
+    source: {fileID: 0}
+  - name: bossRockSlam
+    clip: {fileID: 8300000, guid: c837567b437b72b48baef5559de89e20, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 1
+    looping: 0
+    source: {fileID: 0}
+  - name: bossSwordSlam
+    clip: {fileID: 8300000, guid: a5c3a09727519f74489e554aaea01320, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 1
+    looping: 0
+    source: {fileID: 0}
+  - name: musicMainMenu
+    clip: {fileID: 8300000, guid: dd1bfcb85bd40754bb7a809e13e68fcc, type: 3}
+    volume: 0.25
+    pitch: 1
+    spatialBlend: 0
+    looping: 1
+    source: {fileID: 0}
+--- !u!82 &4212346222164519357
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916070252553896892}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
